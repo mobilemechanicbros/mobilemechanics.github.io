@@ -20,15 +20,19 @@
             line-height: 1.6;
         }
 
+        /* =========================
+           HEADER
+        ========================= */
+
         header {
-            background: #ffffff; 
+            background: #ffffff;
             text-align: center;
-            padding-top: 25px;
+            padding: 25px 0;
         }
 
         header h1 {
             font-size: 42px;
-            color: #002b49; /* Navy Blue */
+            color: #002b49;
             margin-bottom: 10px;
             text-transform: uppercase;
         }
@@ -50,11 +54,15 @@
         }
 
         h2.section-title {
-            color: #002b49; /* Navy Blue */
+            color: #002b49;
             font-size: 30px;
             margin-bottom: 20px;
             text-align: center;
         }
+
+        /* =========================
+           ABOUT
+        ========================= */
 
         .intro {
             background: #ffffff;
@@ -69,7 +77,7 @@
 
         .notice {
             background: #f4f6f8;
-            border-left: 5px solid #002b49; /* Navy Accent */
+            border-left: 5px solid #002b49;
             padding: 20px;
             margin: 25px auto;
             max-width: 800px;
@@ -79,6 +87,10 @@
         .notice strong {
             color: #002b49;
         }
+
+        /* =========================
+           PRICES
+        ========================= */
 
         .prices {
             background: #ffffff;
@@ -106,15 +118,35 @@
         }
 
         .price {
-            color: #002b49; /* Navy Blue */
+            color: #002b49;
             font-weight: bold;
             font-size: 18px;
         }
 
         .free {
-            color: #2b8a3e; /* Clear dark green for FREE */
+            color: #2b8a3e;
             font-weight: bold;
         }
+
+        /* =========================
+           WARRANTY
+        ========================= */
+
+        .warranty {
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .warranty p {
+            max-width: 750px;
+            margin: auto;
+            color: #333333;
+            font-size: 17px;
+        }
+
+        /* =========================
+           AVAILABILITY
+        ========================= */
 
         .availability {
             background: #ffffff;
@@ -127,8 +159,107 @@
             margin: 10px 0;
         }
 
-        .contact {
+        /* =========================
+           SCHEDULE A SERVICE
+        ========================= */
+
+        .schedule {
             background: #f8f9fa;
+            padding: 50px 0;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .schedule-intro {
+            max-width: 750px;
+            margin: 0 auto 30px;
+            text-align: center;
+            color: #333333;
+            font-size: 17px;
+        }
+
+        .schedule-box {
+            max-width: 700px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(0, 43, 73, 0.08);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            color: #002b49;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #cbd5e1;
+            border-radius: 5px;
+            background: #ffffff;
+            color: #222222;
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #888888;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #00509d;
+            box-shadow: 0 0 0 2px rgba(0, 80, 157, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .schedule-button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            background: #002b49;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .schedule-button:hover {
+            background: #00509d;
+            transform: translateY(-2px);
+        }
+
+        .schedule-note {
+            text-align: center;
+            color: #666666;
+            font-size: 14px;
+            margin-top: 18px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: #ffffff;
             text-align: center;
             border-top: 1px solid #e2e8f0;
             border-bottom: 1px solid #e2e8f0;
@@ -146,10 +277,14 @@
         }
 
         .contact a {
-            color: #00509d; /* Navy Link */
+            color: #00509d;
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* =========================
+           BUTTONS
+        ========================= */
 
         .buttons {
             display: flex;
@@ -161,8 +296,8 @@
 
         .button {
             display: inline-block;
-            background: #002b49; /* Navy Button Background */
-            color: #ffffff !important; /* White Text */
+            background: #002b49;
+            color: #ffffff !important;
             padding: 14px 25px;
             border-radius: 6px;
             text-decoration: none;
@@ -175,17 +310,9 @@
             transform: translateY(-2px);
         }
 
-        .warranty {
-            background: #ffffff;
-            text-align: center;
-        }
-
-        .warranty p {
-            max-width: 750px;
-            margin: auto;
-            color: #333333;
-            font-size: 17px;
-        }
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             background: #ffffff;
@@ -196,7 +323,12 @@
             border-top: 1px solid #eeeeee;
         }
 
+        /* =========================
+           MOBILE
+        ========================= */
+
         @media (max-width: 600px) {
+
             header h1 {
                 font-size: 31px;
             }
@@ -216,13 +348,24 @@
             .price-item span:first-child {
                 max-width: 65%;
             }
+
+            .schedule-box {
+                padding: 20px;
+            }
+
+            .schedule-button {
+                padding: 14px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- =========================
+         HEADER
+    ========================= -->
+
     <header>
         <div class="container">
             <h1>AFFORDABLE MOBILE MECHANIC</h1>
@@ -231,7 +374,10 @@
     </header>
 
 
-    <!-- ABOUT -->
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
     <section class="intro">
         <div class="container">
 
@@ -239,8 +385,9 @@
 
             <p>
                 Hey! We are Mobile Mechanic Bros.
-                We started this business to give back to our local community, connect with people across Richmond County,
-                and turn our passion for hands-on mechanical work into a helpful service you can count on. 
+                We started this business to give back to our local community,
+                connect with people across Richmond County, and turn our passion
+                for hands-on mechanical work into a helpful service you can count on.
             </p>
 
             <p>
@@ -261,7 +408,10 @@
     </section>
 
 
-    <!-- PRICES -->
+    <!-- =========================
+         PRICES
+    ========================= -->
+
     <section class="prices">
         <div class="container">
 
@@ -313,7 +463,10 @@
     </section>
 
 
-    <!-- WARRANTY -->
+    <!-- =========================
+         WARRANTY
+    ========================= -->
+
     <section class="warranty">
         <div class="container">
 
@@ -328,7 +481,10 @@
     </section>
 
 
-    <!-- AVAILABILITY -->
+    <!-- =========================
+         AVAILABILITY
+    ========================= -->
+
     <section class="availability">
         <div class="container">
 
@@ -347,290 +503,160 @@
         </div>
     </section>
 
-    
-```html
-<!-- SCHEDULE A SERVICE -->
-<section class="schedule">
-    <div class="container">
 
-        <h2 class="section-title">Schedule a Service</h2>
+    <!-- =========================
+         SCHEDULE A SERVICE
+    ========================= -->
 
-        <p class="schedule-intro">
-            Need some work done? Pick a time that works for you and
-            send us your service request. We'll review it and get back
-            to you to confirm the appointment.
-        </p>
+    <section class="schedule">
+        <div class="container">
 
-        <div class="schedule-box">
+            <h2 class="section-title">Schedule a Service</h2>
 
-            <form id="serviceForm">
-
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Your name"
-                        required
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="(910) 555-1234"
-                        required
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="vehicle">Vehicle</label>
-                    <input
-                        type="text"
-                        id="vehicle"
-                        name="vehicle"
-                        placeholder="Year / Make / Model"
-                        required
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="service">Service Needed</label>
-
-                    <select id="service" name="service" required>
-                        <option value="">Select a service</option>
-                        <option value="Fluid Change">Fluid Change - $10</option>
-                        <option value="Brake Replacement">Brake Replacement - $20</option>
-                        <option value="Alternator Replacement">
-                            Alternator Replacement - $30
-                        </option>
-                        <option value="Hose Replacement">
-                            Hose Replacement - $10
-                        </option>
-                        <option value="Part Swap / Replacement">
-                            Part Swap / Replacement - $10-$20
-                        </option>
-                        <option value="Flat Tire Change">
-                            Flat Tire Change - FREE with spare
-                        </option>
-                        <option value="Other">
-                            Other / Not Listed
-                        </option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="date">Preferred Date</label>
-                    <input
-                        type="date"
-                        id="date"
-                        name="date"
-                        required
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="time">Preferred Time</label>
-
-                    <select id="time" name="time" required>
-                        <option value="">Select a time</option>
-                        <option value="8:00 AM">8:00 AM</option>
-                        <option value="9:00 AM">9:00 AM</option>
-                        <option value="10:00 AM">10:00 AM</option>
-                        <option value="11:00 AM">11:00 AM</option>
-                        <option value="12:00 PM">12:00 PM</option>
-                        <option value="1:00 PM">1:00 PM</option>
-                        <option value="2:00 PM">2:00 PM</option>
-                        <option value="3:00 PM">3:00 PM</option>
-                        <option value="4:00 PM">4:00 PM</option>
-                        <option value="5:00 PM">5:00 PM</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="address">Service Address</label>
-
-                    <input
-                        type="text"
-                        id="address"
-                        name="address"
-                        placeholder="Where will the vehicle be located?"
-                        required
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="details">Additional Information</label>
-
-                    <textarea
-                        id="details"
-                        name="details"
-                        rows="5"
-                        placeholder="Tell us about the vehicle or the problem..."
-                    ></textarea>
-                </div>
-
-                <button type="submit" class="schedule-button">
-                    REQUEST APPOINTMENT
-                </button>
-
-            </form>
-
-            <p class="schedule-note">
-                Appointment requests are not confirmed until we contact you.
+            <p class="schedule-intro">
+                Need some work done? Pick a time that works for you and
+                send us your service request. We'll review it and get back
+                to you to confirm the appointment.
             </p>
 
+            <div class="schedule-box">
+
+                <form id="serviceForm">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="(910) 555-1234"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vehicle">Vehicle</label>
+                        <input
+                            type="text"
+                            id="vehicle"
+                            name="vehicle"
+                            placeholder="Year / Make / Model"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="Fluid Change">
+                                Fluid Change - $10
+                            </option>
+                            <option value="Brake Replacement">
+                                Brake Replacement - $20
+                            </option>
+                            <option value="Alternator Replacement">
+                                Alternator Replacement - $30
+                            </option>
+                            <option value="Hose Replacement">
+                                Hose Replacement - $10
+                            </option>
+                            <option value="Part Swap / Replacement">
+                                Part Swap / Replacement - $10-$20
+                            </option>
+                            <option value="Flat Tire Change">
+                                Flat Tire Change - FREE with spare
+                            </option>
+                            <option value="Other">
+                                Other / Not Listed
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+
+                        <select id="time" name="time" required>
+                            <option value="">Select a time</option>
+                            <option value="8:00 AM">8:00 AM</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Service Address</label>
+
+                        <input
+                            type="text"
+                            id="address"
+                            name="address"
+                            placeholder="Where will the vehicle be located?"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Additional Information</label>
+
+                        <textarea
+                            id="details"
+                            name="details"
+                            rows="5"
+                            placeholder="Tell us about the vehicle or the problem..."
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="schedule-button">
+                        REQUEST APPOINTMENT
+                    </button>
+
+                </form>
+
+                <p class="schedule-note">
+                    Appointment requests are not confirmed until we contact you.
+                </p>
+
+            </div>
+
         </div>
-
-    </div>
-</section>
+    </section>
 
 
-    <style>
-    .schedule {
-        background: #ffffff;
-        padding: 50px 0;
-    }
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
-    .schedule-intro {
-        max-width: 750px;
-        margin: 0 auto 30px;
-        text-align: center;
-        color: #222222;
-        font-size: 17px;
-    }
-
-    .schedule-box {
-        max-width: 700px;
-        margin: auto;
-        background: #222;
-        padding: 30px;
-        border-radius: 8px;
-        border: 1px solid #333;
-    }
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .form-group label {
-        display: block;
-        margin-bottom: 7px;
-        color: #f5b400;
-        font-weight: bold;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        width: 100%;
-        padding: 13px;
-        border: 1px solid #444;
-        border-radius: 5px;
-        background: #111;
-        color: #fff;
-        font-size: 16px;
-        font-family: inherit;
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-        outline: none;
-        border-color: #f5b400;
-    }
-
-    .form-group textarea {
-        resize: vertical;
-    }
-
-    .schedule-button {
-        width: 100%;
-        padding: 15px;
-        border: none;
-        border-radius: 5px;
-        background: #f5b400;
-        color: #111;
-        font-size: 17px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .schedule-button:hover {
-        background: #ffd04a;
-    }
-
-    .schedule-note {
-        text-align: center;
-        color: #888;
-        font-size: 14px;
-        margin-top: 18px;
-    }
-
-    @media (max-width: 600px) {
-        .schedule-box {
-            padding: 20px;
-        }
-    }
-</style>
-
-
-<script>
-    // Prevent customers from selecting dates in the past
-    const dateInput = document.getElementById("date");
-
-    const today = new Date();
-    const year = today.getFullYear();
-    const month = String(today.getMonth() + 1).padStart(2, "0");
-    const day = String(today.getDate()).padStart(2, "0");
-
-    dateInput.min = `${year}-${month}-${day}`;
-
-
-    // Temporary appointment request behavior
-    document.getElementById("serviceForm").addEventListener("submit", function(event) {
-
-        event.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const phone = document.getElementById("phone").value;
-        const vehicle = document.getElementById("vehicle").value;
-        const service = document.getElementById("service").value;
-        const date = document.getElementById("date").value;
-        const time = document.getElementById("time").value;
-        const address = document.getElementById("address").value;
-        const details = document.getElementById("details").value;
-
-        const subject =
-            "Mobile Mechanic Appointment Request - " + name;
-
-        const body =
-            "NEW SERVICE REQUEST\n\n" +
-            "Name: " + name + "\n" +
-            "Phone: " + phone + "\n" +
-            "Vehicle: " + vehicle + "\n" +
-            "Service: " + service + "\n" +
-            "Preferred Date: " + date + "\n" +
-            "Preferred Time: " + time + "\n" +
-            "Service Address: " + address + "\n\n" +
-            "Additional Information:\n" +
-            details;
-
-        const mailto =
-            "mailto:mobilemechanicbros@protonmail.com" +
-            "?subject=" + encodeURIComponent(subject) +
-            "&body=" + encodeURIComponent(body);
-
-        window.location.href = mailto;
-    });
-</script>
-```
-
-    <!-- CONTACT -->
     <section class="contact">
         <div class="container">
 
@@ -645,7 +671,9 @@
 
                 <p>
                     <strong>Phone:</strong><br>
-                    <a href="tel:+19106105867">(910) 610-5867</a>
+                    <a href="tel:+19106105867">
+                        (910) 610-5867
+                    </a>
                 </p>
 
                 <p>
@@ -673,8 +701,12 @@
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
     <footer>
+
         <p>
             Affordable Mobile Mechanic
         </p>
@@ -686,7 +718,90 @@
         <p>
             &copy; 2026 Affordable Mobile Mechanic
         </p>
+
     </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        // Prevent customers from selecting dates in the past
+
+        const dateInput = document.getElementById("date");
+
+        const today = new Date();
+
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, "0");
+        const day = String(today.getDate()).padStart(2, "0");
+
+        dateInput.min = `${year}-${month}-${day}`;
+
+
+        // Appointment request behavior
+
+        document.getElementById("serviceForm").addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+                const name =
+                    document.getElementById("name").value;
+
+                const phone =
+                    document.getElementById("phone").value;
+
+                const vehicle =
+                    document.getElementById("vehicle").value;
+
+                const service =
+                    document.getElementById("service").value;
+
+                const date =
+                    document.getElementById("date").value;
+
+                const time =
+                    document.getElementById("time").value;
+
+                const address =
+                    document.getElementById("address").value;
+
+                const details =
+                    document.getElementById("details").value;
+
+
+                const subject =
+                    "Mobile Mechanic Appointment Request - " + name;
+
+
+                const body =
+                    "NEW SERVICE REQUEST\n\n" +
+                    "Name: " + name + "\n" +
+                    "Phone: " + phone + "\n" +
+                    "Vehicle: " + vehicle + "\n" +
+                    "Service: " + service + "\n" +
+                    "Preferred Date: " + date + "\n" +
+                    "Preferred Time: " + time + "\n" +
+                    "Service Address: " + address + "\n\n" +
+                    "Additional Information:\n" +
+                    details;
+
+
+                const mailto =
+                    "mailto:mobilemechanicbros@protonmail.com" +
+                    "?subject=" + encodeURIComponent(subject) +
+                    "&body=" + encodeURIComponent(body);
+
+
+                window.location.href = mailto;
+            }
+        );
+
+    </script>
 
 </body>
 </html>
