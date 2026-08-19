@@ -6,6 +6,11 @@
 
     <title>Affordable Mobile Mechanic | Rockingham, NC</title>
 
+    <!-- Sharp, modern font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -14,10 +19,12 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Inter", Arial, Helvetica, sans-serif;
             background: #ffffff;
             color: #222222;
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
         }
 
         /* =========================
@@ -27,20 +34,23 @@
         header {
             background: #ffffff;
             text-align: center;
-            padding: 25px 0;
+            padding: 30px 0 25px;
         }
 
         header h1 {
             font-size: 42px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
             color: #002b49;
             margin-bottom: 10px;
             text-transform: uppercase;
         }
 
         header h2 {
-            font-size: 22px;
-            font-weight: normal;
+            font-size: 21px;
+            font-weight: 500;
             color: #444444;
+            letter-spacing: -0.2px;
         }
 
         .container {
@@ -56,6 +66,8 @@
         h2.section-title {
             color: #002b49;
             font-size: 30px;
+            font-weight: 800;
+            letter-spacing: -0.8px;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -73,6 +85,7 @@
             margin: 15px auto;
             color: #333333;
             font-size: 17px;
+            font-weight: 400;
         }
 
         .notice {
@@ -86,6 +99,7 @@
 
         .notice strong {
             color: #002b49;
+            font-weight: 700;
         }
 
         /* =========================
@@ -119,13 +133,13 @@
 
         .price {
             color: #002b49;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 18px;
         }
 
         .free {
             color: #2b8a3e;
-            font-weight: bold;
+            font-weight: 700;
         }
 
         /* =========================
@@ -160,7 +174,7 @@
         }
 
         /* =========================
-           SCHEDULE A SERVICE
+           SCHEDULE
         ========================= */
 
         .schedule {
@@ -196,7 +210,7 @@
             display: block;
             margin-bottom: 7px;
             color: #002b49;
-            font-weight: bold;
+            font-weight: 700;
         }
 
         .form-group input,
@@ -236,8 +250,10 @@
             border-radius: 6px;
             background: #002b49;
             color: #ffffff;
-            font-size: 17px;
-            font-weight: bold;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
             cursor: pointer;
             transition: 0.2s;
         }
@@ -276,10 +292,15 @@
             font-size: 18px;
         }
 
+        .contact strong {
+            font-weight: 700;
+            color: #222222;
+        }
+
         .contact a {
             color: #00509d;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         /* =========================
@@ -301,7 +322,7 @@
             padding: 14px 25px;
             border-radius: 6px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 700;
             transition: 0.2s;
         }
 
@@ -331,6 +352,7 @@
 
             header h1 {
                 font-size: 31px;
+                letter-spacing: -1px;
             }
 
             header h2 {
@@ -362,9 +384,7 @@
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================= -->
+    <!-- HEADER -->
 
     <header>
         <div class="container">
@@ -374,9 +394,7 @@
     </header>
 
 
-    <!-- =========================
-         ABOUT
-    ========================= -->
+    <!-- ABOUT -->
 
     <section class="intro">
         <div class="container">
@@ -397,7 +415,7 @@
             </p>
 
             <div class="notice">
-                <strong>NOTICE:</strong><br>
+                <strong>Just to be upfront:</strong><br>
                 We're NOT professional mechanics. We know how to do a lot of the
                 basic stuff, but we definitely don't know everything. If it's
                 something we're not comfortable doing or don't know how to do,
@@ -408,9 +426,7 @@
     </section>
 
 
-    <!-- =========================
-         PRICES
-    ========================= -->
+    <!-- PRICES -->
 
     <section class="prices">
         <div class="container">
@@ -463,9 +479,7 @@
     </section>
 
 
-    <!-- =========================
-         WARRANTY
-    ========================= -->
+    <!-- WARRANTY -->
 
     <section class="warranty">
         <div class="container">
@@ -481,9 +495,7 @@
     </section>
 
 
-    <!-- =========================
-         AVAILABILITY
-    ========================= -->
+    <!-- AVAILABILITY -->
 
     <section class="availability">
         <div class="container">
@@ -504,9 +516,7 @@
     </section>
 
 
-    <!-- =========================
-         SCHEDULE A SERVICE
-    ========================= -->
+    <!-- SCHEDULE A SERVICE -->
 
     <section class="schedule">
         <div class="container">
@@ -653,14 +663,12 @@
     </section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================= -->
+    <!-- CONTACT -->
 
     <section class="contact">
         <div class="container">
 
-            <h2 class="section-title">Get In Touch!</h2>
+            <h2 class="section-title">Get In Touch</h2>
 
             <div class="contact-box">
 
@@ -686,7 +694,7 @@
                 <div class="buttons">
 
                     <a class="button" href="tel:+19106105867">
-                        Call/Text Us
+                        Contact Us
                     </a>
 
                     <a class="button" href="mailto:mobilemechanicbros@protonmail.com">
@@ -701,14 +709,12 @@
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+    <!-- FOOTER -->
 
     <footer>
 
         <p>
-            Affordable, Trustworthy, High Quality Services
+            Affordable Mobile Mechanic
         </p>
 
         <p>
@@ -716,15 +722,13 @@
         </p>
 
         <p>
-            &copy; 2026 Mobile Mechanic Bros
+            &copy; 2026 Affordable Mobile Mechanic
         </p>
 
     </footer>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================= -->
+    <!-- JAVASCRIPT -->
 
     <script>
 
