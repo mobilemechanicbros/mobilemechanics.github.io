@@ -1,0 +1,408 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Affordable Mobile Mechanic | Rockingham, NC</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1c1c1c;
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 4px solid #f5b400;
+        }
+
+        header h1 {
+            font-size: 42px;
+            color: #f5b400;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        header h2 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #ddd;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            padding: 45px 0;
+        }
+
+        h2.section-title {
+            color: #f5b400;
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .intro {
+            background: #181818;
+        }
+
+        .intro p {
+            max-width: 800px;
+            margin: 15px auto;
+            color: #ddd;
+            font-size: 17px;
+        }
+
+        .notice {
+            background: #242424;
+            border-left: 5px solid #f5b400;
+            padding: 20px;
+            margin: 25px auto;
+            max-width: 800px;
+        }
+
+        .notice strong {
+            color: #f5b400;
+        }
+
+        .prices {
+            background: #101010;
+        }
+
+        .price-list {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1e1e1e;
+            padding: 17px 20px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #333;
+        }
+
+        .price-item span:first-child {
+            color: #eee;
+        }
+
+        .price {
+            color: #f5b400;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .free {
+            color: #55d66b;
+        }
+
+        .availability {
+            background: #181818;
+            text-align: center;
+        }
+
+        .availability p {
+            color: #ddd;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact {
+            background: #202020;
+            text-align: center;
+        }
+
+        .contact-box {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .contact p {
+            color: #ddd;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .contact a {
+            color: #f5b400;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #f5b400;
+            color: #111 !important;
+            padding: 14px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #ffd04a;
+            transform: translateY(-2px);
+        }
+
+        .warranty {
+            background: #111;
+            text-align: center;
+        }
+
+        .warranty p {
+            max-width: 750px;
+            margin: auto;
+            color: #ddd;
+            font-size: 17px;
+        }
+
+        footer {
+            background: #0a0a0a;
+            text-align: center;
+            padding: 25px 15px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 31px;
+            }
+
+            header h2 {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 35px 0;
+            }
+
+            .price-item {
+                padding: 15px;
+            }
+
+            .price-item span:first-child {
+                max-width: 65%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>AFFORDABLE MOBILE MECHANIC</h1>
+            <h2>Serving Rockingham &amp; the Hamlet, NC Area</h2>
+        </div>
+    </header>
+
+
+    <!-- ABOUT -->
+    <section class="intro">
+        <div class="container">
+
+            <h2 class="section-title">What We Do</h2>
+
+            <p>
+                What's up Richmond County! My name is Michael Hunter Strickland.
+                Me and a buddy have been thinking for a while about something we
+                could do to help people out, make connections with people in the
+                area, and gain more knowledge doing what we enjoy.
+            </p>
+
+            <p>
+                So we're starting to offer affordable mobile mechanic work on the side.
+                We'll come to you and help with basic repairs and maintenance without
+                charging professional-shop prices.
+            </p>
+
+            <div class="notice">
+                <strong>Just to be upfront:</strong><br>
+                We're NOT professional mechanics. We know how to do a lot of the
+                basic stuff, but we definitely don't know everything. If it's
+                something we're not comfortable doing or don't know how to do,
+                we'll tell you straight up.
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PRICES -->
+    <section class="prices">
+        <div class="container">
+
+            <h2 class="section-title">Labor Prices</h2>
+
+            <p style="text-align:center; color:#aaa; margin-bottom:25px;">
+                You buy the parts. We provide the labor.
+            </p>
+
+            <div class="price-list">
+
+                <div class="price-item">
+                    <span>Fluid Changes</span>
+                    <span class="price">$10</span>
+                </div>
+
+                <div class="price-item">
+                    <span>Brake Replacement</span>
+                    <span class="price">$20</span>
+                </div>
+
+                <div class="price-item">
+                    <span>Alternator Replacement</span>
+                    <span class="price">$30</span>
+                </div>
+
+                <div class="price-item">
+                    <span>Hose Replacement</span>
+                    <span class="price">$10</span>
+                </div>
+
+                <div class="price-item">
+                    <span>Part Swaps / Replacements</span>
+                    <span class="price">$10–$20</span>
+                </div>
+
+                <div class="price-item">
+                    <span>Flat Tire Change</span>
+                    <span class="price free">FREE*</span>
+                </div>
+
+            </div>
+
+            <p style="text-align:center; color:#888; margin-top:20px;">
+                *Free flat tire change applies when you have a usable spare.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- WARRANTY -->
+    <section class="warranty">
+        <div class="container">
+
+            <h2 class="section-title">Our Promise</h2>
+
+            <p>
+                If a part is defective out of the box or fails after a little while
+                and it's still under warranty, we'll come replace it again for free.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- AVAILABILITY -->
+    <section class="availability">
+        <div class="container">
+
+            <h2 class="section-title">Availability</h2>
+
+            <p>
+                We both work full time, and Michael has a newborn, so we're
+                mostly available on <strong>weekends</strong>.
+            </p>
+
+            <p>
+                Have a job in mind that isn't listed above?
+                No problem. Reach out and ask.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <div class="container">
+
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-box">
+
+                <p>
+                    <strong>Service Area:</strong><br>
+                    Richmond County, Rockingham-Hamlet 28379-28345
+                </p>
+
+                <p>
+                    <strong>Phone:</strong><br>
+                    <a href="tel:+19106105867">(910) 610-5867</a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:mobilemechanicbros@protonmail.com">
+                        mobilemechanicbros@protonmail.com
+                    </a>
+                </p>
+
+                <div class="buttons">
+
+                    <a class="button" href="tel:+19106105867">
+                        CALL / TEXT
+                    </a>
+
+                    <a class="button" href="mailto:mobilemechanicbros@protonmail.com">
+                        SEND EMAIL
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Affordable Mobile Mechanic
+        </p>
+
+        <p>
+            Rockingham / Hamlet, NC 28379 Area
+        </p>
+
+        <p>
+            &copy; 2026 Affordable Mobile Mechanic
+        </p>
+    </footer>
+
+</body>
+</html>
+```
